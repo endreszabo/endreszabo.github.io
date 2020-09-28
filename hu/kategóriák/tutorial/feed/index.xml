@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</link>
+    <link>/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Wed, 25 Apr 2018 07:43:48 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/tutorial/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/hu/kateg%C3%B3ri%C3%A1k/tutorial/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

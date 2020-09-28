@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/tags/ipsec.html</link>
+    <link>/tags/ipsec.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Tue, 06 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/tags/ipsec/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/ipsec/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VTI Tunnel Interface with strongSwan</title>
-      <link>https://www.qssl.org/~eszabo/tutorial/etp001-vti-tunnel-interface-with-strongswan.html</link>
+      <link>/tutorial/etp001-vti-tunnel-interface-with-strongswan.html</link>
       <pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/tutorial/etp001-vti-tunnel-interface-with-strongswan.html</guid>
+      <guid>/tutorial/etp001-vti-tunnel-interface-with-strongswan.html</guid>
       <description>&lt;p&gt;I successfully managed to get Linux VTI (Virtual Tunnel Interface) working with strongSwan. By using VTI it is no longer needed to rely on the routing policy database, making understanding and maintaining routes easier. Also with VTI you can see the cleartext traffic on the VTI interface itself. It was confusing to see actual tunnel traffic before using &lt;code&gt;tcpdump&lt;/code&gt; using the standard policy database setup. (There are &lt;code&gt;ulog&lt;/code&gt;/&lt;code&gt;nflog&lt;/code&gt; hacks to see cleartext traffic in both direction though, similar to BSD &lt;code&gt;pflog&lt;/code&gt;.)&lt;/p&gt;</description>
     </item>
     

@@ -3,117 +3,117 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/blog.html</loc>
+    <loc>/hu/blog.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.qssl.org/~eszabo/blog.html"
+                href="/blog.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://www.qssl.org/~eszabo/hu/blog.html"
+                href="/hu/blog.html"
                 />
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k.html</loc>
+    <loc>/hu/c%C3%ADmk%C3%A9k.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/dns.html</loc>
+    <loc>/hu/c%C3%ADmk%C3%A9k/dns.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/h%C3%A1l%C3%B3zat.html</loc>
+    <loc>/hu/c%C3%ADmk%C3%A9k/h%C3%A1l%C3%B3zat.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k.html</loc>
+    <loc>/hu/kateg%C3%B3ri%C3%A1k.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/blog/ebp042_mit-szur-a-digi.html</loc>
+    <loc>/hu/blog/ebp042_mit-szur-a-digi.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</loc>
+    <loc>/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/blog/ebp033_flook-the-missing-manual.html</loc>
+    <loc>/hu/blog/ebp033_flook-the-missing-manual.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/irc.html</loc>
+    <loc>/hu/c%C3%ADmk%C3%A9k/irc.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</loc>
+    <loc>/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/blog/ebp015_enabling-the-second-spi-bus-on-the-raspberry-pi-2-and-3.html</loc>
+    <loc>/hu/blog/ebp015_enabling-the-second-spi-bus-on-the-raspberry-pi-2-and-3.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/be%C3%A1gyazott.html</loc>
+    <loc>/hu/c%C3%ADmk%C3%A9k/be%C3%A1gyazott.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/otthonautomatiz%C3%A1l%C3%A1s.html</loc>
+    <loc>/hu/kateg%C3%B3ri%C3%A1k/otthonautomatiz%C3%A1l%C3%A1s.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/proof-of-concept.html</loc>
+    <loc>/hu/kateg%C3%B3ri%C3%A1k/proof-of-concept.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/</loc>
+    <loc>/hu/</loc>
     <lastmod>2019-11-07T21:04:58+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.qssl.org/~eszabo/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://www.qssl.org/~eszabo/hu/"
+                href="/hu/"
                 />
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</loc>
+    <loc>/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</loc>
+    <loc>/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.qssl.org/~eszabo/blog/ebp001_wifi-ethernet-bonding.html"
+                href="/blog/ebp001_wifi-ethernet-bonding.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html"
+                href="/hu/blog/ebp001_wifi-es-ethernet-bondingja.html"
                 />
   </url>
   

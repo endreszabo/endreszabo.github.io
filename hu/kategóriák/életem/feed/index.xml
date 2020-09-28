@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</link>
+    <link>/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Mon, 27 Aug 2018 20:22:11 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mit szűr a Digi?</title>
-      <link>https://www.qssl.org/~eszabo/hu/blog/ebp042_mit-szur-a-digi.html</link>
+      <link>/hu/blog/ebp042_mit-szur-a-digi.html</link>
       <pubDate>Mon, 27 Aug 2018 20:22:11 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/blog/ebp042_mit-szur-a-digi.html</guid>
+      <guid>/hu/blog/ebp042_mit-szur-a-digi.html</guid>
       <description>&lt;p&gt;Egy szép napos délelőttön jött a riasztás, hogy a monitoring szerint a Digi-s előfizetésen lógó gépem nem elérhető. Ez általában cron által jól meghatározott időpontban szokott történni, amikor is a heti újracsatlakozást pontos ütemezés szerint, automatikusan végeztetem el. Azonban a riasztás nem időben jött és nem múlt el. A gépem eléréséhez két, különböző dyndns szolgáltatást használok a VPS-eimre csatlakozó VPN-eken túl: egy sajátot és egy külső szolgáltatóit. A gépemet nem sikerült elérni sem az aktuálisan, internetes címnek látott, sem a korábbi publikus címén.&lt;/p&gt;</description>
     </item>
     

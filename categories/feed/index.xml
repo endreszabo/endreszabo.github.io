@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/categories.html</link>
+    <link>/categories.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Tue, 12 Jun 2018 07:20:30 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/categories/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/categories/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Half Baked Ideas</title>
-      <link>https://www.qssl.org/~eszabo/categories/half-baked-ideas.html</link>
+      <link>/categories/half-baked-ideas.html</link>
       <pubDate>Fri, 11 Nov 2011 11:11:11 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/categories/half-baked-ideas.html</guid>
+      <guid>/categories/half-baked-ideas.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>https://www.qssl.org/~eszabo/categories/tutorial.html</link>
+      <link>/categories/tutorial.html</link>
       <pubDate>Tue, 17 Apr 2018 09:43:18 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/categories/tutorial.html</guid>
+      <guid>/categories/tutorial.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proof of Concept</title>
-      <link>https://www.qssl.org/~eszabo/categories/proof-of-concept.html</link>
+      <link>/categories/proof-of-concept.html</link>
       <pubDate>Tue, 12 Jun 2018 07:20:30 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/categories/proof-of-concept.html</guid>
+      <guid>/categories/proof-of-concept.html</guid>
       <description></description>
     </item>
     

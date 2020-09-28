@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k.html</link>
+    <link>/hu/kateg%C3%B3ri%C3%A1k.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Mon, 27 Aug 2018 20:22:11 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/hu/kateg%C3%B3ri%C3%A1k/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>koncepcionálás</title>
-      <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</link>
+      <link>/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</link>
       <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</guid>
+      <guid>/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proof of Concept</title>
-      <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/proof-of-concept.html</link>
+      <link>/hu/kateg%C3%B3ri%C3%A1k/proof-of-concept.html</link>
       <pubDate>Sat, 24 Jun 2017 11:58:18 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/proof-of-concept.html</guid>
+      <guid>/hu/kateg%C3%B3ri%C3%A1k/proof-of-concept.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Otthonautomatizálás</title>
-      <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/otthonautomatiz%C3%A1l%C3%A1s.html</link>
+      <link>/hu/kateg%C3%B3ri%C3%A1k/otthonautomatiz%C3%A1l%C3%A1s.html</link>
       <pubDate>Sat, 24 Jun 2017 11:58:18 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/otthonautomatiz%C3%A1l%C3%A1s.html</guid>
+      <guid>/hu/kateg%C3%B3ri%C3%A1k/otthonautomatiz%C3%A1l%C3%A1s.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</link>
+      <link>/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</link>
       <pubDate>Wed, 25 Apr 2018 07:43:48 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</guid>
+      <guid>/hu/kateg%C3%B3ri%C3%A1k/tutorial.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>életem</title>
-      <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</link>
+      <link>/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</link>
       <pubDate>Mon, 27 Aug 2018 20:22:11 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</guid>
+      <guid>/hu/kateg%C3%B3ri%C3%A1k/%C3%A9letem.html</guid>
       <description></description>
     </item>
     

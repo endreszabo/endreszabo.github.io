@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/tags/networking.html</link>
+    <link>/tags/networking.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Thu, 07 Jun 2018 08:39:19 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/tags/networking/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/networking/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux Kernel Martian Source Logs Explained</title>
-      <link>https://www.qssl.org/~eszabo/blog/ebp037_martian-source-or-destination-traffic-explained.html</link>
+      <link>/blog/ebp037_martian-source-or-destination-traffic-explained.html</link>
       <pubDate>Thu, 07 Jun 2018 08:39:19 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/blog/ebp037_martian-source-or-destination-traffic-explained.html</guid>
+      <guid>/blog/ebp037_martian-source-or-destination-traffic-explained.html</guid>
       <description>Quite a bit of our customers&#39; IT guys happen to misinterpret the real meaning of the martian source traffic logs they see on their gateway hosts.</description>
     </item>
     
     <item>
       <title>WiFi &#43; Ethernet bonding</title>
-      <link>https://www.qssl.org/~eszabo/blog/ebp001_wifi-ethernet-bonding.html</link>
+      <link>/blog/ebp001_wifi-ethernet-bonding.html</link>
       <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/blog/ebp001_wifi-ethernet-bonding.html</guid>
+      <guid>/blog/ebp001_wifi-ethernet-bonding.html</guid>
       <description>&lt;p&gt;When I&amp;rsquo;m at home, I &lt;em&gt;dislike&lt;/em&gt; undocking my laptop to move around the house because of the Ethernet-to-WiFi switchover takes long seconds and all my TCP sessions like SSH get lost. It&amp;rsquo;s because my laptop is assigned a different IP address on WiFi and on the wired network even if they belong to the same VLAN. Well, it looks like this is not the case any more.&lt;/p&gt;</description>
     </item>
     

@@ -3,207 +3,207 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/telefonszamom-valtozik.html</loc>
+    <loc>/telefonszamom-valtozik.html</loc>
     <lastmod>2019-11-07T21:04:58+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog.html</loc>
+    <loc>/blog.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://www.qssl.org/~eszabo/hu/blog.html"
+                href="/hu/blog.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.qssl.org/~eszabo/blog.html"
+                href="/blog.html"
                 />
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/categories.html</loc>
+    <loc>/categories.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp040_defeating-checkpoint-route-all-traffic-enforcement.html</loc>
+    <loc>/blog/ebp040_defeating-checkpoint-route-all-traffic-enforcement.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/firewall.html</loc>
+    <loc>/tags/firewall.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/hacks.html</loc>
+    <loc>/tags/hacks.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/categories/proof-of-concept.html</loc>
+    <loc>/categories/proof-of-concept.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags.html</loc>
+    <loc>/tags.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/vpn.html</loc>
+    <loc>/tags/vpn.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/linux.html</loc>
+    <loc>/tags/linux.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp037_martian-source-or-destination-traffic-explained.html</loc>
+    <loc>/blog/ebp037_martian-source-or-destination-traffic-explained.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/networking.html</loc>
+    <loc>/tags/networking.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp036_archzfs-repo-for-kernels.html</loc>
+    <loc>/blog/ebp036_archzfs-repo-for-kernels.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/zfs.html</loc>
+    <loc>/tags/zfs.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/logging.html</loc>
+    <loc>/tags/logging.html</loc>
     <lastmod>2018-06-13T07:24:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp023_shipping-logs-to-logz.io-service.html</loc>
+    <loc>/blog/ebp023_shipping-logs-to-logz.io-service.html</loc>
     <lastmod>2018-06-13T07:24:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/categories/tutorial.html</loc>
+    <loc>/categories/tutorial.html</loc>
     <lastmod>2018-06-13T07:24:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/</loc>
+    <loc>/</loc>
     <lastmod>2019-11-30T07:37:05+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://www.qssl.org/~eszabo/hu/"
+                href="/hu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.qssl.org/~eszabo/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/cv.html</loc>
+    <loc>/cv.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/interjukerdesek.html</loc>
+    <loc>/interjukerdesek.html</loc>
     <lastmod>2019-11-07T21:04:58+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/dns.html</loc>
+    <loc>/tags/dns.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp005_the-pdnsapp-part1.html.html</loc>
+    <loc>/blog/ebp005_the-pdnsapp-part1.html.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/ipsec.html</loc>
+    <loc>/tags/ipsec.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/strongswan.html</loc>
+    <loc>/tags/strongswan.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tutorial.html</loc>
+    <loc>/tutorial.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tutorial/etp001-vti-tunnel-interface-with-strongswan.html</loc>
+    <loc>/tutorial/etp001-vti-tunnel-interface-with-strongswan.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/endianness.html</loc>
+    <loc>/tags/endianness.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/categories/half-baked-ideas.html</loc>
+    <loc>/categories/half-baked-ideas.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp004_thoughts-on-everyday-endianness.html</loc>
+    <loc>/blog/ebp004_thoughts-on-everyday-endianness.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/tags/nginx.html</loc>
+    <loc>/tags/nginx.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp006_nginx-as-a-general-purpose-tcp-proxy.html</loc>
+    <loc>/blog/ebp006_nginx-as-a-general-purpose-tcp-proxy.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp003_thoughts-on-ipv6-reverse-dns-address-mapping-for-the-masses.html.html</loc>
+    <loc>/blog/ebp003_thoughts-on-ipv6-reverse-dns-address-mapping-for-the-masses.html.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp002_nginx-altroot-with-conditional-autoindex.html</loc>
+    <loc>/blog/ebp002_nginx-altroot-with-conditional-autoindex.html</loc>
     <lastmod>2018-06-11T21:20:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/blog/ebp001_wifi-ethernet-bonding.html</loc>
+    <loc>/blog/ebp001_wifi-ethernet-bonding.html</loc>
     <lastmod>2018-09-06T08:08:29+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html"
+                href="/hu/blog/ebp001_wifi-es-ethernet-bondingja.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.qssl.org/~eszabo/blog/ebp001_wifi-ethernet-bonding.html"
+                href="/blog/ebp001_wifi-ethernet-bonding.html"
                 />
   </url>
   
   <url>
-    <loc>https://www.qssl.org/~eszabo/404.html</loc>
+    <loc>/404.html</loc>
     <lastmod>2018-06-13T08:54:12+00:00</lastmod>
   </url>
   

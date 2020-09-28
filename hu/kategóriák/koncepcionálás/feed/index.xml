@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Endre Szabo</title>
-    <link>https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</link>
+    <link>/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s.html</link>
     <description>Recent content on site Endre Szabo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2011-2016 Endre Szabo</copyright>
     <lastBuildDate>Mon, 24 May 2010 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.qssl.org/~eszabo/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s/feed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/hu/kateg%C3%B3ri%C3%A1k/koncepcion%C3%A1l%C3%A1s/feed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WiFi és Ethernet bondingja</title>
-      <link>https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</link>
+      <link>/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</link>
       <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</guid>
+      <guid>/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</guid>
       <description>&lt;p&gt;Amikor otthon vagyok, macerásnak tartom a laptopomat levenni a dokkolóról, mert a vezetékes Ehternetről a WiFi-re való áttérés észrevehető másodpercekbe telik a már kiépült TCP kapcsolataim megszakadása mellett. Mindez persze azért van, mert a WiFi és vezetékes interfészeknek más-más IP-címük van, annak ellenére, hogy egy adott VLAN-ba tartoznak. Nos, megoldódni látszik ez a helyzet a továbbiakban.&lt;/p&gt;</description>
     </item>
     
