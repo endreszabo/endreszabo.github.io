@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mit szűr a Digi? :: Endre Szabo</title>
+		<base href="https://www.qssl.org/~eszabo/"/>
+		<link href="" rel="alternate" type="application/rss+xml" title="Endre Szabo" />
+		<link href="a/s.css" media="screen" rel="stylesheet" type="text/css">		<script type="text/javascript">
+			const enable_comments=function() {
+				document.getElementById("button_enable_comments").style.display='none';
+				var disqus_config = function () {
+					this.page.url = "https://end.re/ebp042/";
+					this.page.identifier = "ebp042";
+				};
+				var d = document, s = d.createElement('script');
+				s.src = 'https://endreszabo.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			}
+		</script>
+
+		<link rel="preload" href="fonts/p0.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="fonts/p1.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="ss4r.woff" as="font" crossorigin="anonymous" />
+
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+				<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="description" content="yet another tech blog with underdeveloped thoughts, quick and dirty tips and tricks, random ramblings">
+		<meta name="keywords" content='' />
+		<meta name="author" content="Szabó Endre">
+ 
+		<meta property="og:title" content="Mit szűr a Digi?" />
+		<meta property="og:description" content="yet another tech blog with underdeveloped thoughts, quick and dirty tips and tricks, random ramblings" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:url" content="https://www.qssl.org/~eszabo/hu/blog/ebp042_mit-szur-a-digi.html" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#fafafa">
+		<link rel="shortcut icon" href="favicon.png">
+
+		<meta name="generator" content="Hugo 0.75.1" />
+	</head>
+	<body>
+
+		<header class="header-main">
+			<div class="logo">
+				<a title="Endre Szabo" href="https://www.qssl.org/~eszabo/index.html">
+					<img src="images/el.svg" alt="logo" width="90" class="logo-main"/>
+				</a>
+			</div>
+			<div class="nav">
+				<nav class="main-nav">
+					<ul>
+						<li><a href="/~eszabo/">[Same in English]</a></li>
+						<li><a href="/~eszabo/hu/blog.html">Blog</a></li>
+						<li><a href="/~eszabo/hu/tutorialok.html">Tutorialok</a></li>
+						<li><a href="/~eszabo/hu/index.html">Rólam</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+		</header>
+		
+		<main class="wrapper-main">
+            <section class="wrapper-content">
+				<section class="post-index" itemscope itemtype="http://schema.org/BlogPosting">
+					<article class="post-content">
+						<div class="post-header">
+							
+							<h2 class="post-title" itemprop="name">Mit szűr a Digi?</h2>
+														
+							<span class="a-meta">
+								<a class="category-%C3%A9letem" href="/~eszabo/hu/kateg%c3%b3ri%c3%a1k/%C3%A9letem">életem</a>
+							</span>
+							<span class="m-split">
+								<a class="tag-h%C3%A1l%C3%B3zat" href="/~eszabo/hu/c%c3%admk%c3%a9k/h%C3%A1l%C3%B3zat">#hálózat</a>, 
+								<a class="tag-dns" href="/~eszabo/hu/c%c3%admk%c3%a9k/dns">#dns</a>
+							</span>
+							<time class="m-split" datetime='2018-09-06T08:08:29&#43;00:00' data-updated="true">Frissítve:
+							szept. 6, 2018
+</time>
+
+</div>
+						<figure class="landing-image">
+							<img src="http://digi.hu/sites/default/files/slider//slider_20180319_1g_slider_02.png" alt="Mit szűr a Digi?"/>
+						</figure>
+						<div class="entry-content full-article" itemprop="articleBody">
+							<p>Egy szép napos délelőttön jött a riasztás, hogy a monitoring szerint a Digi-s előfizetésen lógó gépem nem elérhető. Ez általában cron által jól meghatározott időpontban szokott történni, amikor is a heti újracsatlakozást pontos ütemezés szerint, automatikusan végeztetem el. Azonban a riasztás nem időben jött és nem múlt el. A gépem eléréséhez két, különböző dyndns szolgáltatást használok a VPS-eimre csatlakozó VPN-eken túl: egy sajátot és egy külső szolgáltatóit. A gépemet nem sikerült elérni sem az aktuálisan, internetes címnek látott, sem a korábbi publikus címén.</p>
+<p>Korábban szóbeszéd szintjén járt a Digi ügyfelek között, hogy az alsóbb kategóriát képviselő Internet előfizetések esetén az ügyfeleket kérdés nélkül CGN NAT mögé terelik „jó lesz nekik az is” alapon. A DIGINet 1000 és hasonló előfizetések esetén korábbi híresztelések szerint ez nem volt tervbe véve, azonban sajnos mégis ez történt.</p>
+<p>Szóval, ezen kérés nélkül beállított CGN NAT-os telefonhívás során volt egy heves vitám a Digi Ügyfélszolgálattal, hogy ha már úgy is hibára kell lejelenteni a NAT-oltságot (3 napos hibajavítási határidő, wtf), akkor vegyék fel hibára azt is, hogy mindenféle ÁSZF-beli hivatkozás nélkül szűrik &ndash; többek között &ndash; a DIGINet-es kliensek felé indított UDP/53 forgalmat is. Ezt a tényt a callcenteres agent a „társosztállyal” egyeztetve tagadta a telefonban. A Digi hivatalos ügyfélszolgálata szerint csak az SMTP 25-ös portját szűrik. Az ÁSZF tesz egy implicit kinyilatkoztatást arra, hogy az SMTP forgalmat engedélyeztetni lehet a fix IP-címes ügyfelek esetében, ez azonban a lakossági körben már nem lehetséges.</p>
+<p>Az UDP/53 szűrésével kapcsolatban az igazán elkeserítő a Digi Ügyfélszolgálatának a „társosztályokkal” karöltve 10 percben előadott kategórikus tagadása.</p>
+<h2 id="mindeközben-a-valóságban">Mindeközben a valóságban</h2>
+<p>Lássuk, hogy a valóságban, titkolt és szembesítés esetén is letagadott módon miket szűr még a Digi.</p>
+<h3 id="internet-felől-digi-ügyfél-felé-küldött-csomagok-esetében">Internet felől Digi ügyfél felé küldött csomagok esetében</h3>
+<ul>
+<li><strong>UDP/53</strong>: Blogposztom tárgya ez az érthetetlen portszűrés maga. Mégis, mi az oka lehet PONT ennek? Ezer sebből vérző Windows RPC szeméthegyek miért nincsenek inkább szűrve? Milyen ártalom közlekedik UDP/53-on? Digis dinamikus lakossági IP-címre mutató FQDN-re senki értelmes nem fog névszerver szolgáltatást delegálni. Én csak VPN-ezni szeretnék. Igen, ezen a porton. Vannak olyan <a href="https://www.ikea.hu/">szar</a> <a href="https://www.auchan.hu/">szemét</a> agyonkorlátozott WiFi-k, ahol pont ez az utolsó mentsvár, amin át egy OpenVPN vagy iodine még kijut.</li>
+<li><strong>TCP/25</strong>: érthetetlen módon a Digis kliensek <em>felé</em> sincsen engedélyezve az SMTP forgalom. Egy időben volt ilyen törekvésem, hogy domainjeim MX rekordjának az otthoni gépem „dyndns” FQDN-jét adjam meg, hogy a levelek közvetlenül hozzám érkezhessenek be. Ezt a szűrést sajnos nem lehetett kikapcsoltatni hosszan siránkozás ellenére sem, a Digi befelé jövő SMTP forgalom esetén is fix IP-cím szolgáltatásra való előfizetéshez kötötte ezt. Mi a franc? A megoldást végül egy VPS-es VPN-en keresztüli DNAT jelentette, ami még olcsóbb is, mint a Digis fix IP-cím (amit már nem is lehet igényelni lakossági csomagokhoz évek óta).</li>
+<li><strong>TCP/53</strong>: DNS szűrés TCP felett is. De miééért?</li>
+</ul>
+<h3 id="digi-ügyfél-felől-internet-felé-küldött-csomagok-esetében">Digi ügyfél felől Internet felé küldött csomagok esetében</h3>
+<ul>
+<li><strong>UDP/0</strong>: 0-s célportra küldött UDP csomagokat szűrik. Érthetetlen, hogy mi ez a kivételezés, főleg, hogy TCP/0 viszont mehet.</li>
+<li><strong>TCP/25</strong>: ennek az egyetlen szűrésnek lehet alapértelmezetten racionalitása. Minden lakossági szolgáltató védi a saját, ügyfelek számára poolként használt prefixeit ilyen módon. Vannak az ügyfeleket kevésbé leszaró <a href="https://www.telekom.hu/lakossagi">„jobb”</a> <a href="https://www.upc.hu/internet/">szolgáltatók</a>, akik lehetővé teszik az ügyél kérésére és felelősségére a közvetlen lakossági linkről való SMTP alapú levélküldést, bár ennek a korunkban a mindenféle, kétes módon kialakított és karbantartott BL-listák miatt kevéssé van gyakorlati haszna.</li>
+</ul>
+<p>Már-már kész szerencse, hogy a DNS forgalom legalább kifelé nincsen szűrve, bár igazán nem akarok ötletet adni a Diginek ahhoz, hogy ilyen IKEA meg Auchan nyílt WiFi minőségre züllessze a szolgáltatását.</p>
+<h2 id="hibabejelentő">Hibabejelentő</h2>
+<p>Írtam a Digi hibabejelentő címére, mellékelve a vizsgálataim során keletkezett PCAP-fileokat, melyből kétséget kizáróan és nyilvánvalóan kiderül a tény, hogy (többek között) az UDP/53 forgalmat szűrik.</p>
+<blockquote>
+<p>Tisztelt DIGI Távközlési és Szolgáltató Kft,</p>
+<p>Telefonos ügyfélszolgálattal történt, [redacted] számú hívásazonosító alatt rögzített telefonbeszélgetésünkre hivatkozva kérem szépen, hogy az előfizetői végpontjaim ([redacted] és [redacted] számú szerződések szerint) felé érkező UDP/53 forgalom korlátozás intézményét az előfizetői viszonylataim tekintetében megszüntetni szíveskedjenek.</p>
+<pre><code class="language-#" data-lang="#">Starting Nmap 7.70 ( https://nmap.org ) at 2018-08-27 22:10 UTC
+Nmap scan report for 188-143-14-197.pool.digikabel.hu (188.143.14.197)
+Host is up (0.0031s latency).
+
+PORT   STATE         SERVICE
+48/udp closed        auditd
+49/udp closed        tacacs
+50/udp closed        re-mail-ck
+51/udp closed        la-maint
+52/udp closed        xns-time
+53/udp open|filtered domain
+54/udp closed        xns-ch
+55/udp closed        isi-gl
+56/udp closed        xns-auth
+57/udp closed        priv-term
+58/udp closed        xns-mail
+</code></pre></blockquote>
+<pre><code>&gt; Technikai részletekért lásd a mellékelt PCAP file-okat.
+&gt;
+&gt; Köszönettel,
+&gt;
+&gt; Szabó Endre Zoltán
+
+A két mellékelt PCAP file:
+
+* [Internet es kliens szempontjából rögzített forgalom](/p/ebp042/internetes-forras-oldal.pcap.gz)
+* [Digi ügyfél végpont szempontjából rögzített frogalom](/p/ebp042/digi-ugyfel-oldal.pcap.gz)
+
+## Update
+
+Megjött a Digi hibabejelentő válasza, miszerint:
+
+&gt; Bejelentését továbbítottuk illetékes kollégáink felé, visszajelzésük szerint nem tiltunk semmilyen DNS portot, feltehetőleg az Ön részéről nincs nyitvs és/vagy nem automatára van állítva a DNS, vagy rossz névszerver van beállítva.
+
+Vajon milyen lehetősége maradt az egyszeri internetfelhasználónak ilyen nyilvánvaló, kétoldalú PCAP-ekkel alátámasztott esetben? NMHH [Lakossági bejelentés](http://nmhh.hu/tart/report/88/Kiepites_lefedettseg_savszelesseg_szolgaltatas_kimaradasa?action=bejelent&amp;category=internet_tech)?
+
+Végül, egyelőre, mint mindenkit érintő eset, egy lakossági bejelentéssel éltem az NMHH felé:
+
+&gt; Tisztelt Hatóság,
+&gt;
+&gt; A Digi Kft DIGINet fantázianevű lakossági Internetelérési szolgáltatása keretében az ÁSZF-ben foglaltakon felül további port-alapú szűrést is végez, melyről sem az ÁSZF-ben, sem a hibabejelentő ügyfélszolgálat explicit megkérdezése esetén sem nyilatkoznak.
+&gt; 
+&gt; Ez a korlátozás minden DIGINet szolgáltatást igénybe vevő ügyfelet érint.
+&gt;
+&gt; Felháborodásomnak és közérdekű bejelentésemnek az ad motivációt, hogy az eltitkolt korlátozás miatt nem tudom elérni a DIGINet előfizetés során kialakított szolgáltatás-átadási pontra csatlakoztatott előfizetői végpontomat az UDP/53-as porton (ahogy semelyik másik Digi ügyfél sem).
+&gt; 
+&gt; A témát mélyen technikai szinten a következő blogpostomban elemeztem:
+&gt; 
+&gt; https://end.re/hu/2018/08/27/ebp042_mit-szur-a-digi/
+&gt; 
+&gt; Bejelentésem szükség esetén hatósági eljárás megindítása iránti kérelemmé is átminősíthető, természetesen vállalva a kérelem megindításához szükséges előzetes eljárási illeték megfizetését.
+</code></pre></div>
+					</article>
+				</section>
+				<hr />
+				<section id="comments">
+					<h2 class="title">Számít a véleményed. Oszd meg!</h2>
+					<button id="button_enable_comments" class="comments-toggle" onClick="enable_comments();">Click to show comments</button>
+					<div id="disqus_thread" aria-live="polite"><noscript><p>Tiszteletben tartom a privát szférád. Éppen ezért általánosságban az oldal működéséhez égyáltalán nem szükséges JavaScript. A komment szekció azonban kivétel ez alól, mert a kommentelési lehetőséget (lévén ez az oldal maga egy statikusan generált oldal) egy külső szolgáltató, <a href="http://disqus.com/?ref_noscript">Disqus biztosítja</a>.</p></noscript></div>
+				</section>
+				<hr />
+				<section id="contribute">
+					<h3 class="title">Found a typo? A [<span color="blue"><i>citation needed</i></span>]? Other improvements?</a></h3>
+					<p>Feel free to	edit this very post using <a href="https://github.com/endreszabo/blog/edit/master/content/blog/2018-08-27_mit-szur-a-digi.hu.md">this deeplink</a> within the GitHub repository of this blog</a>. This page was generated from git commit <a href="https://github.com/endreszabo/blog/blob/8bf3860ec1565c35d406495ebc6fe2c161a0ef9f/content/blog/2018-08-27_mit-szur-a-digi.hu.md">8bf3860</a> committed at <a href="https://github.com/endreszabo/blog/commits/master/content/blog/2018-05-31_ebp036_archzfs-repo-for-kernels.md">2018-09-06 08:08:29 &#43;0000 &#43;0000</a>.</p>
+				</section>
+
+				
+			</section>
+		</section>
+		
+
+
+
+		<footer id="footer" class="inner">
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-sa-4-0.png" /></a><br />Eltérő rendelkezés hiányában az oldalon található tartalmak a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> licenccel rendelkeznek.
+		</footer>
+		
+		
+
+		</main>
+	</body>
+</html>

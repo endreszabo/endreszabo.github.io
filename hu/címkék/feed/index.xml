@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Endre Szabo</title>
+    <link>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k.html</link>
+    <description>Recent content on site Endre Szabo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2011-2016 Endre Szabo</copyright>
+    <lastBuildDate>Mon, 27 Aug 2018 20:22:11 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/feed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>beágyazott</title>
+      <link>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/be%C3%A1gyazott.html</link>
+      <pubDate>Sat, 24 Jun 2017 11:58:18 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/be%C3%A1gyazott.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>irc</title>
+      <link>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/irc.html</link>
+      <pubDate>Wed, 25 Apr 2018 07:43:48 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/irc.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hálózat</title>
+      <link>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/h%C3%A1l%C3%B3zat.html</link>
+      <pubDate>Mon, 27 Aug 2018 20:22:11 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/h%C3%A1l%C3%B3zat.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dns</title>
+      <link>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/dns.html</link>
+      <pubDate>Mon, 27 Aug 2018 20:22:11 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/c%C3%ADmk%C3%A9k/dns.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

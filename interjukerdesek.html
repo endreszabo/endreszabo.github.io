@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interjú kérdések :: Endre Szabo</title>
+		<base href="https://www.qssl.org/~eszabo/"/>
+		<link href="" rel="alternate" type="application/rss+xml" title="Endre Szabo" />
+		<link href="a/s.css" media="screen" rel="stylesheet" type="text/css">
+		<link rel="preload" href="fonts/p0.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="fonts/p1.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="ss4r.woff" as="font" crossorigin="anonymous" />
+
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+				<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="description" content="yet another tech blog with underdeveloped thoughts, quick and dirty tips and tricks, random ramblings">
+		<meta name="keywords" content='' />
+		<meta name="author" content="Endre Szabo">
+ 
+		<meta property="og:title" content="Interjú kérdések" />
+		<meta property="og:description" content="yet another tech blog with underdeveloped thoughts, quick and dirty tips and tricks, random ramblings" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:url" content="https://www.qssl.org/~eszabo/interjukerdesek.html" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#fafafa">
+		<link rel="shortcut icon" href="favicon.png">
+
+		<meta name="generator" content="Hugo 0.75.1" />
+	</head>
+	<body>
+
+		<header class="header-main">
+			<div class="logo">
+				<a title="Endre Szabo" href="https://www.qssl.org/~eszabo/index.html">
+					<img src="images/el.svg" alt="logo" width="90" class="logo-main"/>
+				</a>
+			</div>
+			<div class="nav">
+				<nav class="main-nav">
+					<ul>
+						<li><a href="/~eszabo/hu/">[Ugyanez magyarul]</a></li>
+						<li><a href="/~eszabo/blog.html">Blog</a></li>
+						<li><a href="/~eszabo/tutorial.html">Tutorials</a></li>
+						<li><a href="/~eszabo/index.html">About</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+		</header>
+		
+		<main class="wrapper-main">
+            <section class="wrapper-content">
+				<section class="post-index" itemscope itemtype="http://schema.org/BlogPosting">
+					<article class="post-content">
+						<div class="post-header">
+							</div>
+						<div class="entry-content full-article" itemprop="articleBody">
+							<h1 id="általános-unix-szerű-kérdések">Általános Unix-szerű kérdések</h1>
+<h2 id="egyszerű-kérdések">Egyszerű kérdések</h2>
+<h3 id="hogyan-futtatsz-egy-parancsot-a-háttérben-indítva-hogyan-hozod-előtérbe">Hogyan futtatsz egy parancsot a háttérben indítva? Hogyan hozod előtérbe?</h3>
+<ul>
+<li>A parancssorban a parancs végére illesztett <code>&amp;</code> jellel indítom a háttérben.</li>
+<li><code>fg</code> parancs kiadásával hozom előtérbe.</li>
+</ul>
+<h3 id="hogyan-állítod-le-a-háttérben-indított-processzed">Hogyan állítod le a háttérben indított processzed?</h3>
+<ul>
+<li><code>fg</code> paranccsal előtérbe hozom, majd <code>&lt;ctrl+c&gt;</code>-vel leállítom.</li>
+<li><code>kill %&lt;jobid száma&gt;</code> paranccsal SIGTERM signalt küldve leállítom.</li>
+</ul>
+<h3 id="hogyan-lépsz-ki-vi-ból">Hogyan lépsz ki <code>vi</code>-ból?</h3>
+<ul>
+<li>Mentés nélkül:</li>
+</ul>
+<ol>
+<li><code>:q</code></li>
+<li><code>:q!</code></li>
+<li><code>ZZ</code></li>
+</ol>
+<ul>
+<li>Mentéssel:</li>
+</ul>
+<ol>
+<li><code>:x</code></li>
+</ol>
+<h3 id="hogyan-kéred-le--nézed-meg-a-shellben-korábban-kiadott-parancsokat">Hogyan kéred le / nézed meg a shellben korábban kiadott parancsokat?</h3>
+<p>A <code>history</code> (shell builtin) parancs segítségével.</p>
+<h3 id="hogyan-másolsz-biztonságos-módon-át-egy-filet-egy-gépről-egy-másik-gépre">Hogyan másolsz biztonságos módon át egy filet egy gépről egy másik gépre?</h3>
+<ul>
+<li><code>scp</code> parancs használatával</li>
+<li><code>sftp</code> parancs használatával</li>
+<li><code>rsync</code> parancs használatával SSH-n keresztül.</li>
+</ul>
+<h3 id="hogyan-találod-meg-a-legtöbb-memóriát-foglaló-processzt">Hogyan találod meg a legtöbb memóriát foglaló processzt?</h3>
+<p>A <code>top</code> parancs segítségével, azon belül lesortolom memóriafoglaltság szerint.</p>
+<h3 id="hogyan-deríted-ki-hogy-hány-cpu-mag-illetve-szál-van-a-gépen-amire-be-vagy-jelentkezve">Hogyan deríted ki, hogy hány CPU, mag, illetve szál van a gépen, amire be vagy jelentkezve?</h3>
+<ul>
+<li><code>lscpu</code> kimenetének elemzésével (CPU(s), Thread(s) per core, Core(s) per socket sorok, de ezt nem kell tudni fejből).</li>
+<li>A <code>/proc/cpuinfo</code> pszeudofile tartalmának elemzésével (physical id, core id, processzor sorszám sorok, de ezt nem kell tudni fejből).</li>
+</ul>
+<h3 id="mi-a-különbség-a-hardlink-és-a-softlink-között">Mi a különbség a hardlink és a softlink között?</h3>
+<h3 id="milyen-az-egy-felhasználós-single-user-unx-rendszer-mikor-kerülhet-sor-a-használatára">Milyen az egy felhasználós (single user) UN*X rendszer? Mikor kerülhet sor a használatára?</h3>
+<h3 id="mi-az-a-bash">Mi az a <code>bash</code>?</h3>
+<h3 id="mit-jelent-mit-csinál-az-rm--r--parancs-milyen-körülmények-között-nem-végzi-el-a-feladatát-teljesen">Mit jelent, mit csinál az <code>rm -r *</code> parancs? Milyen körülmények között nem végzi el a feladatát teljesen?</h3>
+<ul>
+<li>Törli az aktuális könyvtárban található fileokat/könyvtárakat.</li>
+<li>Nem törli a rejtett fileokat, illetve nagyon sok, az aktuális könyvtárban létező file/könyvtár esetén E2BIG hibával nem fut le.</li>
+</ul>
+<h3 id="mik-azok-a-hardlinkek-és-mitől-különböznek-a-softlinkektől">Mik azok a hardlinkek és mitől különböznek a softlinkektől?</h3>
+<h3 id="mit-célt-szolgálnak-a-chmod-chown-illetve-chgrp-parancsok">Mit célt szolgálnak a <code>chmod</code>, <code>chown</code>, illetve <code>chgrp</code> parancsok?</h3>
+<h3 id="van-a-gépeden-valahol-egy-fw-rendszerterv-karaktersorozatot-tartalmazó-nevű-file-milyen-módon-tudod-megtalálni-hogy-hol-van">Van a gépeden valahol egy <code>fw-rendszerterv</code> karaktersorozatot tartalmazó nevű file. Milyen módon tudod megtalálni, hogy hol van?</h3>
+<ul>
+<li>locate (ha van és futott a <code>&lt;s|m&gt;locate</code> indexelője)</li>
+<li>find</li>
+</ul>
+<h3 id="hogyan-találsz-meg-egy-adott-karaktersorozatot-tartalmazó-sort-egy-adott-fileban">Hogyan találsz meg egy adott karaktersorozatot tartalmazó sort egy adott fileban?</h3>
+<ul>
+<li><code>grep &quot;karaktersorozat&quot; filenév</code></li>
+</ul>
+<h3 id="hogyan-számolod-meg-egy-adott-karaktersorozatot-tartalmazó-sorokat-egy-adott-fileban">Hogyan számolod meg egy adott karaktersorozatot tartalmazó sorokat egy adott fileban?</h3>
+<ul>
+<li><code>grep -c &quot;karaktersorozat&quot; filenév</code></li>
+</ul>
+<h3 id="mik-azok-a-környezeti-változók-és-milyen-formátumban-kell-őket-definiálni">Mik azok a környezeti változók és milyen formátumban kell őket definiálni?</h3>
+<h3 id="milyen-módon-tudod-ellenőrizni-hogy-egy-adott-tcp-port-nyitva-van-e-egy-távoli-gépen-mindennemű-tűzfal-kikapcsolt-állapotában">Milyen módon tudod ellenőrizni, hogy egy adott TCP port nyitva van-e egy távoli gépen (mindennemű tűzfal kikapcsolt állapotában)?</h3>
+<h3 id="mi-célt-szolgál-a-nohup-parancs-és-mikor-milyen-módon-kell-meghívni">Mi célt szolgál a <code>nohup</code> parancs és mikor, milyen módon kell meghívni?</h3>
+<h3 id="milyen-módon-jeleníted-meg-periodikus-módon-pl-2-másodpercenként-egy-folyamat-kimenetét">Milyen módon jeleníted meg periodikus módon (pl. 2 másodpercenként) egy folyamat kimenetét?</h3>
+<ul>
+<li>A <code>watch &lt;parancs&gt;</code> parancs használatával.</li>
+</ul>
+<h3 id="egy-adott-fwlogtxt-nevű-syslog-fileban-anonimizálás-céljából-hogyan-cseréled-ki-a-fwpri1-hostnév-karakterláncot-firewall-karakterláncra">Egy adott, <code>fwlog.txt</code> nevű syslog fileban anonimizálás céljából hogyan cseréled ki a <code>fwpri1</code> hostnév karakterláncot <code>firewall</code> karakterláncra?</h3>
+<p>Ezt rendesen el lehet bonyolítani, de a legvalószínűbb egyszerű válasz ez lesz: <code>sed s/fwpri1/firewall/g -i fwlog.txt</code> Esetleg /g nélkül, ha a válaszadó figyelmet fordít arra, hogy klasszikus syslog formátumok esetében a hostnév mező a sorok első részében szerepel.</p>
+<h3 id="egy-gép-adott-kötetének-szabad-területe-elfogyott-milyen-módon-deríted-ki-hogy-mi-foglalta-el-a-helyet-ha-korábbról-nem-volt-helyismereted-az-adott-gépen">Egy gép adott kötetének szabad területe elfogyott. Milyen módon deríted ki, hogy mi foglalta el a helyet, ha korábbról nem volt helyismereted az adott gépen?</h3>
+<ul>
+<li><code>du -sh *</code> és hasonló iterációk fognak következni.</li>
+<li>Vagy rögtön <code>ncdu</code> lesz a válasz.</li>
+</ul>
+<h3 id="hogyan-deríted-ki-hogy-mennyi-ideje-van-egy-adott-gép-bekapcsolva">Hogyan deríted ki, hogy mennyi ideje van egy adott gép bekapcsolva?</h3>
+<ul>
+<li><code>uptime</code> parancs használatával.</li>
+<li><code>/proc/uptime</code> pszeudofile kimenete.</li>
+</ul>
+<h3 id="adott-egy-ismert-ip-című-gép-a-hálózatodon-milyen-módon-deríted-ki-a-hostnevét-minden-körülmény-ideális">Adott egy ismert IP-című gép a hálózatodon. Milyen módon deríted ki a hostnevét (minden körülmény ideális)?</h3>
+<ul>
+<li>DNS alapon, <code>dig</code>, <code>host</code>, <code>nslookup</code> parancsok jönnek szóba.</li>
+</ul>
+<h3 id="mi-a-különbség-az-abszolút-és-relatív-út-között">Mi a különbség az abszolút és relatív út között?</h3>
+<h3 id="hogyan-zajlik-egy-http-proxy-val-biztosított-kérés-kiszolgálása">Hogyan zajlik egy HTTP proxy-val biztosított kérés kiszolgálása?</h3>
+<h3 id="lehetséges-e-https-forgalom-kiszolgálása-egy-http-proxy-val">Lehetséges-e HTTPS forgalom kiszolgálása egy HTTP proxy-val?</h3>
+<h3 id="lehetséges-e-ftp-forgalom-kiszolgálása-egy-http-proxy-val">Lehetséges-e FTP forgalom kiszolgálása egy HTTP proxy-val?</h3>
+<h3 id="mire-szolgál-egy-http-válaszüzenet-fejlécében-található-location-nevű-header">Mire szolgál egy HTTP válaszüzenet fejlécében található &ldquo;Location&rdquo; nevű header?</h3>
+<h3 id="mi-a-különbség-a-mua-és-az-mta-között">Mi a különbség a MUA és az MTA között?</h3>
+<h3 id="mit-jelent-az-uac">Mit jelent az UAC?</h3>
+<h3 id="mi-az-az-active-directory">Mi az az Active Directory?</h3>
+<h3 id="milyen-feladatai-vannak-egy-tartományvezérlőnek">Milyen feladatai vannak egy tartományvezérlőnek?</h3>
+<h2 id="közepes-kérdések">Közepes kérdések</h2>
+<h3 id="mit-jelent-a-pgp-miben-másabb-ez-a-gpg-től">Mit jelent a PGP? Miben másabb ez a GPG-től?</h3>
+<h3 id="mi-a-különbség-a-scsi-iscsi-és-serial-attached-scsi-között">Mi a különbség a SCSI, iSCSI és Serial-attached-SCSI között?</h3>
+<h3 id="mit-jelent-a-snapshot-intézménye-egy-volume-manager-esetében">Mit jelent a snapshot intézménye egy volume manager esetében?</h3>
+<h3 id="mit-jelent-a-tükrözött-kötet">Mit jelent a tükrözött kötet?</h3>
+<h3 id="mit-jelent-az-extended-unix-acl-és-mikor-van-jelentősége">Mit jelent az extended unix ACL és mikor van jelentősége?</h3>
+<h3 id="mit-jelent-az-fde">Mit jelent az FDE?</h3>
+<h3 id="hogyan-deríted-ki-hogy-egy-adott-már-futó-processz-milyen-file-okat-tart-nyitva">Hogyan deríted ki, hogy egy adott, már futó processz milyen file-okat tart nyitva?</h3>
+<ul>
+<li><code>lsof -c</code> ha processznév, <code>lsof -p</code> ha PID alapján keresem.</li>
+<li>A <code>/proc/PID/fd</code> könyvtár tartalma alapján.</li>
+</ul>
+<h3 id="hogyan-deríted-ki-hogy-milyen-távoli-gépek-csatlakoznak-a-gépeden-nyitott-pl-3128tcp-portra">Hogyan deríted ki, hogy milyen távoli gépek csatlakoznak a gépeden nyitott, pl. 3128/TCP portra?</h3>
+<ul>
+<li><code>netstat -ntp | grep 3128</code></li>
+</ul>
+<h3 id="mik-azok-a-fifo-típusú-fileok-és-mire-használatosak">Mik azok a FIFO típusú fileok és mire használatosak?</h3>
+<h3 id="milyen-típusú-fileokat-támogat-a-linux-illetve-általános-célú-filerendszerei">Milyen típusú fileokat támogat a Linux, illetve általános célú filerendszerei?</h3>
+<ul>
+<li>közönséges file-ok</li>
+<li>(unix domain) socketek</li>
+<li>szimbolikus linkek</li>
+<li>karakter típusú eszközfileok</li>
+<li>blokk típusú eszközfileok</li>
+<li>FIFO-k</li>
+<li>könyvtárak (igen, ezek is fileok)</li>
+</ul>
+<h3 id="mi-az-a-zombie-processz-hogyan-derítheted-ki-a-létezését">Mi az a zombie processz? Hogyan derítheted ki a létezését?</h3>
+<ul>
+<li>A zombie processz olyan néhai, már nem futó processz, amelynek a szülője processze még nem gondoskodott a kernel által a szülő számára biztosított, a zombie processzhez tartozó átmeneti memóriaterület elkéréséről, felszabadításáról.</li>
+<li>A <code>ps</code> parancs használatával, annak kimenetében a zombie státuszú processzeket legyűjtve (<code>Z</code>) derítem ki a létezését.</li>
+</ul>
+<h3 id="meddig-él-a-zombie-processz-hogyan-tudod-leállítani">Meddig &ldquo;él&rdquo; a zombie processz? Hogyan tudod leállítani?</h3>
+<ul>
+<li>Addig él, amíg a szülője, vagy szülő processz nélküli esetben az <code>init</code> el nem &ldquo;takarítja&rdquo;.</li>
+<li>Sehogy.</li>
+</ul>
+<h3 id="hogyan-deríted-ki-hogy-mennyi-hely-van-még-az-aktuális-meghajtón">Hogyan deríted ki, hogy mennyi hely van még az aktuális meghajtón?</h3>
+<p>A <code>df -&lt;közel tetszőleges kapcsolók&gt; .</code> paranccsal, például <code>df -h .</code> vagy <code>df -k .</code>.</p>
+<h3 id="ha-több-processzt-indítottál-a-háttérben-egy-shell-ből-milyen-módon-hozod-előtérbe-egy-korábban-indított-processzed">Ha több processzt indítottál a háttérben egy shell-ből, milyen módon hozod előtérbe egy korábban indított processzed?</h3>
+<ul>
+<li>(opcionális): <code>jobs</code> paranccsal lekérem a háttérbe küldött/háttérben indított processzek listáját, melyben a parancs mellett a job id-t is láthatom.</li>
+<li>az <code>fg %&lt;jobid száma&gt;</code> paranccsak hozom előtérbe a kiválasztott processzt.</li>
+</ul>
+<h3 id="hogyan-állapítod-meg-hogy-a-rendszer-amelyiken-dolgoznod-kell-32-vagy-64-bites-e">Hogyan állapítod meg, hogy a rendszer, amelyiken dolgoznod kell, 32 vagy 64 bites-e?</h3>
+<ul>
+<li><code>uname -m</code> vagy <code>uname -a</code> parancsok kimenete alapján.</li>
+<li><code>/proc/cpuinfo</code> fileból (ha van) szerzett adatok alapján.</li>
+<li><code>lscpu</code> (ha van) Architecture sora alapján</li>
+<li><code>getconf LONG_BIT</code> paranccsal (ha van) ellenőrizhetjük a long típusú integer méretét bitben.</li>
+<li><code>file</code> paranccsal az <code>/sbin/init</code> file elemzése alapján kapott adatokból.</li>
+</ul>
+<h3 id="milyen-módon-tudod-egy-környezeti-változót-a-subshell-számára-is-elérhetővé-tenni">Milyen módon tudod egy környezeti változót a subshell számára is elérhetővé tenni?</h3>
+<ul>
+<li><code>export VÁLTOZÓNÉV</code> ha már definiálva van.</li>
+<li><code>export VÁLTOZÓNÉV=ÉRTÉK</code> ha még nincs definiálva.</li>
+</ul>
+<h3 id="milyen-módon-tudod-ellenőrizni-hogy-egy-adott-udp-port-nyitva-van-e-egy-távoli-gépen-mindennemű-tűzfal-kikapcsolt-állapotában">Milyen módon tudod ellenőrizni, hogy egy adott UDP port nyitva van-e egy távoli gépen (mindennemű tűzfal kikapcsolt állapotában)?</h3>
+<h3 id="mit-jelent-és-mikor-használatos-a-gather_facts-false-beállítás">Mit jelent és mikor használatos a &ldquo;gather_facts: false&rdquo; beállítás?</h3>
+<h3 id="kialakítható-e-egy-raid6-os-szintű-tömb-pusztán-linux-kernel-alapú-szoftveres-megoldás-használatával">Kialakítható-e egy RAID6-os szintű tömb pusztán Linux kernel alapú szoftveres megoldás használatával?</h3>
+<h3 id="mi-az-adatéletút-menedzsment-és-miért-van-rá-szükség">Mi az adatéletút-menedzsment és miért van rá szükség?</h3>
+<h3 id="vmware-használata-estén-fizikai-node-ok-közötti-vm-migráció-tud-e-san-hálózat-használatával-működni">VMware használata estén fizikai node-ok közötti VM-migráció tud-e SAN-hálózat használatával működni?</h3>
+<h3 id="lehetséges-e-egy-san-t-támogató-tárolóról-közvetlenül-magnóra-történő-mentés-készítése">Lehetséges-e egy SAN-t támogató tárolóról közvetlenül magnóra történő mentés készítése?</h3>
+<h3 id="származhat-e-az-rdn-a-dn-értékéből">Származhat-e az RDN a DN értékéből?</h3>
+<h2 id="extrém-kérdések">Extrém kérdések</h2>
+<h3 id="mi-a-különbség-a-ps--ef-ps-aux-és-ps--aux-parancsok-kimenetei-között">Mi a különbség a <code>ps -ef</code>, <code>ps aux</code> és <code>ps -aux</code> parancsok kimenetei között?</h3>
+<h3 id="milyen-módon-tudod-ellenőrizni-hogy-egy-adott-protokoll-elérhető-e-egy-távoli-gépen-mindennemű-tűzfal-kikapcsolt-állapotában">Milyen módon tudod ellenőrizni, hogy egy adott protokoll elérhető-e egy távoli gépen (mindennemű tűzfal kikapcsolt állapotában)?</h3>
+<h3 id="mi-a-tiszavirág-ephermeral-portok-intézménye">Mi a tiszavirág (ephermeral) portok intézménye?</h3>
+<h1 id="pki-és-tls-kérdések">PKI és TLS kérdések</h1>
+<h2 id="egyszerű-kérdések-1">Egyszerű kérdések</h2>
+<h3 id="milyen-paranccsal-írathatjuk-ki-egy-rendelkezésre-álló-base64-kódolt-tanúsítvány-attribútumait-shell-ből-indítva">Milyen paranccsal írathatjuk ki egy rendelkezésre álló, base64-kódolt tanúsítvány attribútumait shell-ből indítva?</h3>
+<ul>
+<li><code>openssl x509 -text -in tanusitvanyneve</code></li>
+</ul>
+<h3 id="lezárul-e-egy-tls-alapú-kapcsolat-amennyiben-a-kapcsolatot-hitelesítő-tanúsítványok-egyike-lejárt">Lezárul-e egy TLS-alapú kapcsolat, amennyiben a kapcsolatot hitelesítő tanúsítvány(ok egyike) lejárt?</h3>
+<ul>
+<li>Nem, még rekeying esetében sem.</li>
+</ul>
+<h3 id="jelenleg-hányas-verziónál-tart-a-tls-szabvány">Jelenleg hányas verziónál tart a TLS-szabvány?</h3>
+<ul>
+<li>Élesben 1.2, az 1.3 tervezés alatt van.</li>
+</ul>
+<h3 id="mi-a-különbség-az-rsa-és-aes-között">Mi a különbség az RSA és AES között?</h3>
+<h3 id="mi-a-különbség-az-rsa-és-ecdsa-között">Mi a különbség az RSA és ECDSA között?</h3>
+<h3 id="lehetséges-e-ugyanazon-az-ip-címen-http-és-https-kapcsolat-egyszerre-történő-kiszolgálása">Lehetséges-e ugyanazon az IP-címen HTTP és HTTPS kapcsolat egyszerre történő kiszolgálása?</h3>
+<h3 id="mi-az-a-csr">Mi az a CSR?</h3>
+<h3 id="mi-a-különbség-az-ssl-és-a-tls-között">Mi a különbség az SSL és a TLS között?</h3>
+<h3 id="mi-a-különbség-a-szimmetrikus-és-aszimmetrikus-titkosítások-között-melyik-a-gyorsabb">Mi a különbség a szimmetrikus és aszimmetrikus titkosítások között? Melyik a gyorsabb?</h3>
+<h3 id="a-3des-kriptográfiai-primitív-nevében-mit-jelent-a-3-as-szám">A 3DES kriptográfiai primitív nevében mit jelent a 3-as szám?</h3>
+<h3 id="az-aes-3des-rsa-és-rc4-felsorolásból-melyik-a-kakukktojás-és-miért">Az AES, 3DES, RSA és RC4 felsorolásból melyik a kakukktojás és miért?</h3>
+<h3 id="alkalmazható-e-tömörítés-egy-tls-session-keretében-titkosított-csatornán-belül-és-azon-kívül">Alkalmazható-e tömörítés egy TLS-session keretében titkosított csatornán belül? És azon kívül?</h3>
+<h3 id="mi-az-a-smartcard">Mi az a smartcard?</h3>
+<ul>
+<li>Sok a különbség és a szimmetrikus gyorsabb.</li>
+</ul>
+<h3 id="mi-az-a-blokklánc-mondj-rá-gyakorlati-példát">Mi az a blokklánc? Mondj rá gyakorlati példát!</h3>
+<h2 id="közepes-kérdések-1">Közepes kérdések</h2>
+<h3 id="milyen-módokon-lehetséges-a-https-forgalom-adott-hostnévre-való-szűrése">Milyen módokon lehetséges a HTTPS forgalom adott hostnévre való szűrése?</h3>
+<h3 id="felépíthető-e-egy-ftp-kapcsolat-starttls-használatával">Felépíthető-e egy FTP-kapcsolat STARTTLS használatával?</h3>
+<h3 id="elképzelhető-e-egy-olyan-tls-kapcsolat-amelyben-egyik-fél-sem-hitelesíti-vagy-mutat-be-tanúsítványt">Elképzelhető-e egy olyan TLS-kapcsolat, amelyben egyik fél sem hitelesíti, vagy mutat be tanúsítványt?</h3>
+<ul>
+<li>Nem. Vagy a fogadó oldalnak vagy mindkét oldalnak hitelesítenie kell magát.</li>
+</ul>
+<h3 id="mi-a-különbség-a-pkcs11-és-pkcs12-között">Mi a különbség a PKCS11 és PKCS12 között?</h3>
+<h3 id="miért-lehetetlen-pkcs11-ről-pkcs12-re-konvertálniupgradelni">Miért lehetetlen PKCS11-ről PKCS12-re konvertálni/upgradelni?</h3>
+<h3 id="egy-tanúsítvány-csr-alapján-történő-kiállításához-milyen-adatok-átemelése-kötelező">Egy tanúsítvány CSR alapján történő kiállításához milyen adatok átemelése kötelező?</h3>
+<h3 id="milyen-parancs-használatával-változtatható-meg-egy-pem-formátumú-asszimmetrikus-privátkulcs-titkosításához-használt-szimmetrikus-kulcsa">Milyen parancs használatával változtatható meg egy PEM formátumú asszimmetrikus privátkulcs titkosításához használt szimmetrikus kulcsa?</h3>
+<h3 id="tud-e-egy-tls-t-támogató-kliens-egy-csak-ssl-t-támogató-szerverhez-kapcsolódni">Tud-e egy TLS-t támogató kliens egy csak SSL-t támogató szerverhez kapcsolódni?</h3>
+<ul>
+<li>Igen.</li>
+</ul>
+<h3 id="milyen-jelszó-ujjlenyomatképzési-algoritmusokat-támogat-egy-modern-linux-disztribúció">Milyen jelszó ujjlenyomatképzési algoritmusokat támogat egy modern Linux disztribúció?</h3>
+<h3 id="alapértelmezett-esetben-fizikailag-hol-tárolódnak-egy-linux-disztribúción-a-felhasználói-jelszavak">Alapértelmezett esetben fizikailag hol tárolódnak egy Linux disztribúción a felhasználói jelszavak?</h3>
+<h3 id="milyen-parancs-használatával-kapcsolódnál-telnet-szerűen-egy-tls-alapú-szolgáltatási-ponthoz-annak-érdekében-hogy-ez-a-tls-kapcsolat-fel-is-épüljön">Milyen parancs használatával kapcsolódnál telnet szerűen egy TLS-alapú szolgáltatási ponthoz annak érdekében, hogy ez a TLS kapcsolat fel is épüljön?</h3>
+<h3 id="lehetséges-e-tls-alapú-tanúsítványokkal-ssh-szolgáltatási-ponthoz-viszontazonosítva-kapcsolódni">Lehetséges-e TLS-alapú tanúsítványokkal SSH szolgáltatási ponthoz viszontazonosítva kapcsolódni?</h3>
+<h3 id="mutasd-be-a-basic-authentication-http-header-jelentését-működését">Mutasd be a <code>Basic Authentication</code> HTTP header jelentését, működését.</h3>
+<h3 id="mit-jelent-a-cipher-suite-és-mikor-van-jelentősége">Mit jelent a &ldquo;Cipher Suite&rdquo; és mikor van jelentősége?</h3>
+<ul>
+<li>Igen.</li>
+</ul>
+<h3 id="mi-a-különbség-a-hpkp-és-a-hsts-között-alkalmazhatók-e-ugyanazon-kapcsolaton-belül-egyidőben">Mi a különbség a HPKP és a HSTS között? Alkalmazhatók-e ugyanazon kapcsolaton belül egyidőben?</h3>
+<h2 id="nehéz-kérdések">Nehéz kérdések</h2>
+<h3 id="hitelesnek-tekinthető-e-egy-lejárt-hitelesítésszolgáltatói-tanúsítvány-által-kiállított-időpecséttel-ellátott-dokumentum">Hitelesnek tekinthető-e egy lejárt hitelesítésszolgáltatói tanúsítvány által kiállított időpecséttel ellátott dokumentum?</h3>
+<ul>
+<li>Igen.</li>
+</ul>
+<h3 id="hitelesnek-tekinthető-e-egy-visszavont-hitelesítésszolgáltatói-tanúsítvány-által-kiállított-időpecséttel-ellátott-dokumentum">Hitelesnek tekinthető-e egy visszavont hitelesítésszolgáltatói tanúsítvány által kiállított időpecséttel ellátott dokumentum?</h3>
+<ul>
+<li>Az a körülményektől függ. A visszavonási lista tartalmazza a hitelesítésszolgáltatói tanúsítvány visszavonásának okát, de döntésünk minden esetben szubjektív. Érdemes egyeztetni a hitelesítésszolgáltatói tanúsítvány birtokosával a történtekről.</li>
+</ul>
+<h3 id="létezhet-e-szimmetrikus-titkosítás-nélküli-pkcs12-konténer-ha-igen-milyen-körülmények-között">Létezhet-e szimmetrikus titkosítás nélküli PKCS12 konténer? Ha igen, milyen körülmények között?</h3>
+<ul>
+<li>Nem létezhet.</li>
+</ul>
+<h3 id="milyen-viszontazonosítási-eljárások-mellett-lehetséges-e-lets-encrypt-tel-a-wildcard-típusú-tanúsítvány-kiállíttatása">Milyen viszontazonosítási eljárások mellett lehetséges-e Let&rsquo;s Encrypt-tel a wildcard típusú tanúsítvány kiállíttatása?</h3>
+<h3 id="mi-az-a-hsm-és-mikor-használatos">Mi az a HSM és mikor használatos?</h3>
+<h2 id="extrém-kérdések-1">Extrém kérdések</h2>
+<h3 id="mik-azok-az-attribútumtanúsítványok-és-mikor-lehet-rájuk-szükség">Mik azok az attribútumtanúsítványok és mikor lehet rájuk szükség?</h3>
+<h1 id="hálózattal-kapcsolatos-kérdések">Hálózattal kapcsolatos kérdések</h1>
+<h2 id="egyszerű-kérdések-2">Egyszerű kérdések</h2>
+<h3 id="mutasd-be-egy-tcp-kapcsolat-felépülésének-egyes-fázisait">Mutasd be egy TCP kapcsolat felépülésének egyes fázisait!</h3>
+<h3 id="mutasd-be-egy-tcp-kapcsolat-lebontásának-egyes-fázisait">Mutasd be egy TCP kapcsolat lebontásának egyes fázisait!</h3>
+<h3 id="mit-jelentenek-a-martian-source-típusú-hibaüzenetek">Mit jelentenek a martian source típusú hibaüzenetek?</h3>
+<h3 id="kideríthető-e-egy-távoli-gépről-hogy-egy-adott-udp-portján-van-e-listenelő-socket-minden-körülmény-ideális-ha-nem-miért-nem">Kideríthető-e egy távoli gépről, hogy egy adott UDP portján van-e listenelő socket (minden körülmény ideális)? Ha nem miért nem?</h3>
+<h3 id="lehetséges-e-smartcard-on-elhelyezett-tanúsítvány-segítségével-történő-hitelesítés-egy-vpn-kapcsolat-felépítése-során">Lehetséges-e smartcard-on elhelyezett tanúsítvány segítségével történő hitelesítés egy VPN-kapcsolat felépítése során?</h3>
+<ul>
+<li>Kideríthető, nem listenelő socket esetén ICMP port unreachable üzenet jön válaszul.</li>
+</ul>
+<h3 id="mi-a-különbség-a-switch-és-a-router-között">Mi a különbség a switch és a router között?</h3>
+<h3 id="mi-a-különbség-az-osi-2-es-és-3-as-rétege-között">Mi a különbség az OSI 2-es és 3-as rétege között?</h3>
+<h3 id="mit-jelent-a-broadcast-domain">Mit jelent a &ldquo;Broadcast domain&rdquo;?</h3>
+<h3 id="hogyan-működik-az-stp-protokoll">Hogyan működik az STP protokoll?</h3>
+<h3 id="mi-történik-ha-egy-switch-fdb-táblája-betelik">Mi történik ha egy switch FDB táblája betelik?</h3>
+<h3 id="mit-jelent-és-mikor-állhat-elő-a-broadcast-storm">Mit jelent és mikor állhat elő a Broadcast Storm?</h3>
+<h3 id="lehetséges-e-tcp-alapon-traceroute-ot-végezni">Lehetséges-e TCP alapon traceroute-ot végezni?</h3>
+<h3 id="sorold-fel-az-rfc1918-által-definiált-privát-hálózati-tartományokat">Sorold fel az RFC1918 által definiált privát hálózati tartományokat!</h3>
+<h3 id="mit-jelent-az-aszimmetrikus-routing">Mit jelent az aszimmetrikus routing?</h3>
+<h3 id="miben-előnyösebb-a-chap-használata-a-pap-nál">Miben előnyösebb a CHAP használata a PAP-nál?</h3>
+<h3 id="mi-a-különbség-a-ptp-és-pmp-típusú-hálózati-viszonylatok-között">Mi a különbség a PTP és PMP típusú hálózati viszonylatok között?</h3>
+<h3 id="mi-a-különbség-a-cifs-és-az-nfs-protokollok-között">Mi a különbség a CIFS és az NFS protokollok között?</h3>
+<h3 id="mi-az-az-ip-cím">Mi az az IP-cím?</h3>
+<h3 id="mi-az-a-mac-cím">Mi az a MAC-cím?</h3>
+<h3 id="mi-a-különbség-a-multicast-és-a-broadcast-között">Mi a különbség a multicast és a broadcast között?</h3>
+<h3 id="mi-a-különbség-az-unicast-és-az-anycast-között">Mi a különbség az unicast és az anycast között?</h3>
+<h3 id="mit-jelent-a-dmz">Mit jelent a DMZ?</h3>
+<h3 id="hány-rézvezetőnek-van-hely-egy-rj45-típusú-csatlakozóban">Hány rézvezetőnek van hely egy RJ45 típusú csatlakozóban?</h3>
+<h3 id="mit-jelent-a-csavart-érpár">Mit jelent a csavart érpár?</h3>
+<h3 id="mi-a-különbség-a-tcp-és-az-udp-között">Mi a különbség a TCP és az UDP között?</h3>
+<h3 id="mi-a-különbség-a-san-és-a-nas-között">Mi a különbség a SAN és a NAS között?</h3>
+<h2 id="közepes-kérdések-2">Közepes kérdések</h2>
+<h3 id="lehet-e-egy-smtp-válaszüzenet-több-soros">Lehet-e egy SMTP-válaszüzenet több soros?</h3>
+<h3 id="mi-közös-van-a-h323-illetve-sip-protokollokban">Mi közös van a H323 illetve SIP protokollokban?</h3>
+<h3 id="mi-az-a-lun">Mi az a LUN?</h3>
+<h3 id="mi-az-a-vtl">Mi az a VTL?</h3>
+<h3 id="mi-az-a-vtp">Mi az a VTP?</h3>
+<h3 id="lehet-e-egy-san-fabricot-vlan-szerűen-particionálni">Lehet-e egy SAN fabricot &ldquo;VLAN&rdquo; szerűen particionálni?</h3>
+<h3 id="mi-a-különbség-a-single-mode-és-multi-mode-között">Mi a különbség a single mode és multi mode között?</h3>
+<h3 id="kiépíthető-e-egy-lacpetherchannel-link-több-különböző-sebességű-taginterfész-használatával">Kiépíthető-e egy LACP/etherchannel link több, különböző sebességű taginterfész használatával?</h3>
+<h3 id="mi-az-az-acl">Mi az az ACL?</h3>
+<h3 id="egy-hálózati-eszközön-a-9600-8n1-felirat-van-feltüntetve-mit-jelent-ez">Egy hálózati eszközön a &ldquo;9600 8n1&rdquo; felirat van feltüntetve. Mit jelent ez?</h3>
+<h3 id="mi-az-az-arp-proxy-és-mikor-használatos">Mi az az ARP proxy és mikor használatos?</h3>
+<h3 id="mi-az-ospf">Mi az OSPF?</h3>
+<h3 id="az-arp-protokoll-melyik-osi-rétegben-működik">Az ARP protokoll melyik OSI rétegben működik?</h3>
+<h3 id="ipsec-kapcsolatod-felépítésekor-no_proposal_chosen-típusú-hibaüzenetet-kapsz-vissza-a-túloldaltól-mi-a-hiba-és-hogyan-lehet-megoldani">IPsec kapcsolatod felépítésekor <code>NO\_PROPOSAL\_CHOSEN</code> típusú hibaüzenetet kapsz vissza a túloldaltól. Mi a hiba és hogyan lehet megoldani?</h3>
+<h3 id="mik-azon-a-syn-cookiek-és-mikor-van-rájuk-szükség">Mik azon a SYN cookiek és mikor van rájuk szükség?</h3>
+<h3 id="mi-az-a-pmtud">Mi az a PMTUD?</h3>
+<h3 id="mi-a-különbség-az-ipsec-és-a-macsec-között">Mi a különbség az IPSec és a MACSec között?</h3>
+<h3 id="általad-üzemeltetett-linux-netfilter-alapú-tűzfal-naplóiban-magas-számosságban-látsz-rst-flaggel-ellátott-és-eldobott-tcp-csomagokat-mi-ennek-az-oka-mit-lehet-tenni-ellene">Általad üzemeltetett Linux netfilter alapú tűzfal naplóiban magas számosságban látsz RST flaggel ellátott és eldobott TCP csomagokat. Mi ennek az oka? Mit lehet tenni ellene?</h3>
+<h3 id="kideríthető-e-egy-távoli-gépről-hogy-egy-adott-ip-protokollon-hajlandó-e-kommunikálni-minden-körülmény-ideális-ha-nem-miért-nem">Kideríthető-e egy távoli gépről, hogy egy adott IP protokollon hajlandó-e kommunikálni (minden körülmény ideális)? Ha nem miért nem?</h3>
+<ul>
+<li>Igen, ha nincs felbindolva az adott protokollra semmi sem (pl IPSec terminálására a kernel maga az ESP protokollon) akkor ICMP protocol unreachable üzenet jön válaszul.</li>
+</ul>
+<h3 id="mit-jelent-a-csillapítás-és-hogyan-szabályozható">Mit jelent a csillapítás és hogyan szabályozható?</h3>
+<h3 id="mit-jelent-az-autonomous-system">Mit jelent az Autonomous System?</h3>
+<h3 id="mi-a-különbség-a-latency-és-a-jitter-között">Mi a különbség a latency és a jitter között?</h3>
+<h3 id="hány-darab-használható-ip-cím-van-egy-27-es-ipv4-alhálózatban-klasszikus-ethernet-alapú-hálózat-esetén">Hány darab használható IP-cím van egy /27-es IPv4 alhálózatban klasszikus ethernet alapú hálózat esetén?</h3>
+<h3 id="mi-a-különbség-a-baud-rate-és-a-bit-rate-között-ezek-értéke-milyen-körülmények-között-egyezhet-meg-ugyanazon-viszonylatban">Mi a különbség a &ldquo;baud rate&rdquo; és a &ldquo;bit rate&rdquo; között? Ezek értéke milyen körülmények között egyezhet meg ugyanazon viszonylatban?</h3>
+<h3 id="mi-az-a-mib">Mi az a MIB?</h3>
+<h3 id="mi-a-különbség-az-ips-és-az-ids-között">Mi a különbség az IPS és az IDS között?</h3>
+<h3 id="mekkora-a-pppoe-linkeken-használatos-effektív-mtu-érték-amennyiben-az-rfc4638-mtu-növelő-megoldás-nem-támogatott">Mekkora a PPPoE linkeken használatos effektív MTU-érték, amennyiben az RFC4638 MTU növelő megoldás nem támogatott?</h3>
+<h3 id="mi-a-különbség-a-dualstack-és-dualstack-lite-között">Mi a különbség a dualstack és dualstack-lite között?</h3>
+<h3 id="wifi-hálózatok-esetében-mint-jelent-a-beacon-interval">WiFi hálózatok esetében mint jelent a &ldquo;beacon interval&rdquo;?</h3>
+<h3 id="milyen-portot-használ-a-ping-általános-esetben">Milyen portot használ a ping általános esetben?</h3>
+<h3 id="poe-képes-voip-telefon-üzemeltethető-e-egy-poe-t-nem-támogató-switch-ről">PoE képes VoIP telefon üzemeltethető-e egy PoE-t nem támogató switch-ről?</h3>
+<h3 id="mi-a-különbség-a-stateful-és-stateless-ipv6-cím-autokonfigurációja-között">Mi a különbség a stateful és stateless IPv6-cím autokonfigurációja között?</h3>
+<h3 id="mi-a-különbség-a-tcpdump-és-wireshark-programok-között">Mi a különbség a tcpdump és wireshark programok között?</h3>
+<h3 id="milyen-üzemmódot-jelent-ha-egy-cisco-router-promptja-router">Milyen üzemmódot jelent, ha egy Cisco router promptja <code>Router#</code>?</h3>
+<h3 id="miért-előnyösebb-egy-switch-elt-hálózat-a-bridge-lt-hez-képest">Miért előnyösebb egy switch-elt hálózat a bridge-lt hez képest?</h3>
+<h2 id="nehéz-kérdések-1">Nehéz kérdések</h2>
+<h3 id="ethernet-flow-control-használatának-mi-az-előnye">Ethernet flow control használatának mi az előnye?</h3>
+<h3 id="vlan-taggelt-voip-telefonóia-használata-esetén-az-ezeket-kiszolgáló-switchportok-access-vagy-trunk-típusúak">VLAN-taggelt VoIP telefonóia használata esetén az ezeket kiszolgáló switchportok access vagy trunk típusúak?</h3>
+<h3 id="mutasd-be-a-syn-cookiek-alkalmazásával-felépülő-tcp-kapcsolat-egyes-fázisait">Mutasd be a SYN cookiek alkalmazásával felépülő TCP kapcsolat egyes fázisait!</h3>
+<h3 id="milyen-esetekben-nem-tud-a-pmtud-működni">Milyen esetekben nem tud a PMTUD működni?</h3>
+<h3 id="kiépíthető-e-egy-macsec-kapcsolat-tanúsítványok-helyett-csak-psk-alapú-viszontazonosítás-használatával">Kiépíthető-e egy MACSec kapcsolat tanúsítványok helyett csak PSK alapú viszontazonosítás használatával?</h3>
+<h3 id="mit-jelentenek-a-martian-destination-típusú-hibaüzenetek">Mit jelentenek a martian destination típusú hibaüzenetek?</h3>
+<h3 id="mi-történik-ha-egyik-kommunikáló-fél-a-tcp-window-méretét-0-ra-húzza-le">Mi történik ha egyik kommunikáló fél a TCP window méretét 0-ra húzza le?</h3>
+<h3 id="mi-az-az-otdr-mire-használatos">Mi az az OTDR? Mire használatos?</h3>
+<h3 id="kialakítható-e-egy-null-modem-kábel-kettő-darab-cisco-konzol-kábel-rj45-toldóval-történő-illesztésével">Kialakítható-e egy null-modem kábel kettő darab cisco konzol kábel RJ45-toldóval történő illesztésével?</h3>
+<h3 id="mi-az-a-bpdu-és-mikor-érdemes-szűrni">Mi az a BPDU és mikor érdemes szűrni?</h3>
+<h3 id="mi-az-a-bgp">Mi az a BGP?</h3>
+<h3 id="mi-az-az-ipvs">Mi az az IPVS?</h3>
+<h3 id="milyen-módon-kell-egy-asa-eszközt-menteni-annak-érdekében-hogy-a-konfigurációs-beállításokban-szereplő-jelszavak-is-elmentésre-kerüljenek">Milyen módon kell egy ASA-eszközt menteni annak érdekében, hogy a konfigurációs beállításokban szereplő jelszavak is elmentésre kerüljenek?</h3>
+<h3 id="lehetséges-e-egy-asa-eszköz-estében-egyazon-lábon-érkező-routing-beállítások-miatt-ugyanazon-kimenő-forgalom-szűrése">Lehetséges-e egy ASA-eszköz estében egyazon lábon érkező, routing beállítások miatt ugyanazon kimenő forgalom szűrése?</h3>
+<h2 id="extrém-kérdések-2">Extrém kérdések</h2>
+<h3 id="az-ipvs-rd-üzemmódban-melyik-osi-rétegen-dolgozik">Az IPVS RD üzemmódban melyik OSI rétegen dolgozik?</h3>
+<h3 id="mit-jelent-a-bandwidth-delay-product">Mit jelent a Bandwidth Delay Product?</h3>
+<ul>
+<li>BDP = sávszélesség * rtt. Éppen a hálózatban mozgásban lévő adatok mennyisége.</li>
+</ul>
+<h1 id="dns-sel-kapcsolatos-kérdések">DNS-sel kapcsolatos kérdések</h1>
+<h2 id="egyszerű-kérdések-3">Egyszerű kérdések</h2>
+<h3 id="mi-a-különbség-az-a-és-aaaa-típusú-rekordok-között">Mi a különbség az A és AAAA típusú rekordok között?</h3>
+<h3 id="lehet-e-a-típusú-rekordot-ptr-típusú-rekorddá-alakítani">Lehet-e A típusú rekordot PTR típusú rekorddá alakítani?</h3>
+<h3 id="ns-rekord-értékeként-beállítható-e-ip-cím">NS rekord értékeként beállítható-e IP-cím?</h3>
+<h3 id="mx-rekord-értékeként-beállítható-e-ip-cím">MX rekord értékeként beállítható-e IP-cím?</h3>
+<h3 id="mi-a-különbség-a-dnssec-és-az-ipsec-között">Mi a különbség a DNSSEC és az IPSec között?</h3>
+<h2 id="közepes-kérdések-3">Közepes kérdések</h2>
+<h3 id="mi-az-a-glue-ragadvány-típusú-rekord-és-milyen-esetekben-van-rá-szükség">Mi az a glue (ragadvány) típusú rekord és milyen esetekben van rá szükség?</h3>
+<h3 id="az-spf-előírásokat-milyen-típusú-rekordokban-tároljuk">Az SPF előírásokat milyen típusú rekord(okban) tároljuk?</h3>
+<h3 id="lehetséges-e-egy-24-nél-kisebb-tartomány-reverse-zónájának-delegálása">Lehetséges-e egy /24-nél kisebb tartomány reverse zónájának delegálása?</h3>
+<h2 id="nehéz-kérdések-2">Nehéz kérdések</h2>
+<h3 id="mi-az-a-caa-típusú-rekord">Mi az a CAA típusú rekord?</h3>
+</div>
+					</article>
+				</section>
+
+				
+			</section>
+		</section>
+		
+
+
+
+		<footer id="footer" class="inner">
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-sa-4-0.png" /></a><br />Website contents are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> unless stated otherwise.
+		</footer>
+		
+		
+
+		</main>
+	</body>
+</html>

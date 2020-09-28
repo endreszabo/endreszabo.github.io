@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Endre Szabo</title>
+    <link>https://www.qssl.org/~eszabo/hu/</link>
+    <description>Recent content on site Endre Szabo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2011-2016 Endre Szabo</copyright>
+    <lastBuildDate>Sun, 07 May 2017 16:48:40 +0200</lastBuildDate>
+    
+        <atom:link href="https://www.qssl.org/~eszabo/hu/feed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>https://www.qssl.org/~eszabo/hu/blog.html</link>
+      <pubDate>Mon, 27 Aug 2018 20:22:11 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/blog.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

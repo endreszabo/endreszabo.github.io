@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Endre Szabo</title>
+    <link>https://www.qssl.org/~eszabo/hu/blog.html</link>
+    <description>Recent content on site Endre Szabo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2011-2016 Endre Szabo</copyright>
+    <lastBuildDate>Mon, 27 Aug 2018 20:22:11 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.qssl.org/~eszabo/hu/blog/feed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mit szűr a Digi?</title>
+      <link>https://www.qssl.org/~eszabo/hu/blog/ebp042_mit-szur-a-digi.html</link>
+      <pubDate>Mon, 27 Aug 2018 20:22:11 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/blog/ebp042_mit-szur-a-digi.html</guid>
+      <description>&lt;p&gt;Egy szép napos délelőttön jött a riasztás, hogy a monitoring szerint a Digi-s előfizetésen lógó gépem nem elérhető. Ez általában cron által jól meghatározott időpontban szokott történni, amikor is a heti újracsatlakozást pontos ütemezés szerint, automatikusan végeztetem el. Azonban a riasztás nem időben jött és nem múlt el. A gépem eléréséhez két, különböző dyndns szolgáltatást használok a VPS-eimre csatlakozó VPN-eken túl: egy sajátot és egy külső szolgáltatóit. A gépemet nem sikerült elérni sem az aktuálisan, internetes címnek látott, sem a korábbi publikus címén.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A második SPI busz használata a Raspberry PI 2-n és 3-on</title>
+      <link>https://www.qssl.org/~eszabo/hu/blog/ebp015_enabling-the-second-spi-bus-on-the-raspberry-pi-2-and-3.html</link>
+      <pubDate>Sat, 24 Jun 2017 11:58:18 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/blog/ebp015_enabling-the-second-spi-bus-on-the-raspberry-pi-2-and-3.html</guid>
+      <description>Bár kevesen tudják, a Raspberry Pi 2-es szériától kezdve a SoC-on még egy SPI vezérlő kivezetés is helyet kapott. Ez abban segíthet nekünk, hogy egy új slave esetén ne kelljen az SPI0 buszon osztoznia a már meglévő slavenek.
+A lakásautomatizálási feladatok ellátásának egy részét egy RPI2 végzi itthon. A korábban CAN BUS alapú szenzorhálózatot kiegészítettem a mysensors.org féle NRF24L01 ráadiós adóvevővel rendelkező hálózattal. A CAN BUS controller és transceiver hagyományosan az SPI0 buszon futott, az NRF24L01 került az SPI1-re.</description>
+    </item>
+    
+    <item>
+      <title>WiFi és Ethernet bondingja</title>
+      <link>https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</link>
+      <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qssl.org/~eszabo/hu/blog/ebp001_wifi-es-ethernet-bondingja.html</guid>
+      <description>&lt;p&gt;Amikor otthon vagyok, macerásnak tartom a laptopomat levenni a dokkolóról, mert a vezetékes Ehternetről a WiFi-re való áttérés észrevehető másodpercekbe telik a már kiépült TCP kapcsolataim megszakadása mellett. Mindez persze azért van, mert a WiFi és vezetékes interfészeknek más-más IP-címük van, annak ellenére, hogy egy adott VLAN-ba tartoznak. Nos, megoldódni látszik ez a helyzet a továbbiakban.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

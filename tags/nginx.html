@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>nginx :: Endre Szabo</title>
+		<base href="https://www.qssl.org/~eszabo/"/>
+		<link href="https://www.qssl.org/~eszabo/tags/nginx/feed/index.xml" rel="alternate" type="application/rss+xml" title="Endre Szabo" />
+		<link href="a/s.css" media="screen" rel="stylesheet" type="text/css">
+		<link rel="preload" href="fonts/p0.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="fonts/p1.woff2" as="font" crossorigin="anonymous" />
+		<link rel="preload" href="ss4r.woff" as="font" crossorigin="anonymous" />
+
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+				<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="description" content="yet another tech blog with underdeveloped thoughts, quick and dirty tips and tricks, random ramblings">
+		<meta name="keywords" content='' />
+		<meta name="author" content="Endre Szabo">
+ 
+		<meta property="og:title" content="nginx" />
+		<meta property="og:description" content="yet another tech blog with underdeveloped thoughts, quick and dirty tips and tricks, random ramblings" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:url" content="https://www.qssl.org/~eszabo/tags/nginx.html" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#fafafa">
+		<link rel="shortcut icon" href="favicon.png">
+
+		<meta name="generator" content="Hugo 0.75.1" />
+	</head>
+	<body>
+		<header class="header-main">
+			<div class="logo">
+				<a title="Endre Szabo" href="https://www.qssl.org/~eszabo/index.html">
+					<img src="images/el.svg" alt="logo" width="90" class="logo-main"/>
+				</a>
+			</div>
+			<div class="nav">
+				<nav class="main-nav">
+					<ul>
+						<li><a href="/~eszabo/hu/">[Ugyanez magyarul]</a></li>
+						<li><a href="/~eszabo/blog.html">Blog</a></li>
+						<li><a href="/~eszabo/tutorial.html">Tutorials</a></li>
+						<li><a href="/~eszabo/index.html">About</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+		</header>
+		
+		<main class="wrapper-main">
+			<section class="wrapper-content">
+				<h1 class="h1-title">Entries tagged with <span class="tag-nginx">#nginx</span></h1>
+				<div class="post-index">
+					<article class="post-content">
+						<h2 class="post-title"><a href="/~eszabo/blog/ebp006_nginx-as-a-general-purpose-tcp-proxy.html">Nginx as a general purpose TCP proxy</a></h2>							
+							<span class="a-meta">
+								<a class="category-proof-of-concept" href="/~eszabo/categories/proof-of-concept/">Proof of Concept</a>
+							</span>
+							<span class="m-split">
+								<a class="tag-nginx" href="/~eszabo/tags/nginx/">#nginx</a>
+							</span>
+							
+							<time class="m-split" datetime='2018-06-11T21:20:35&#43;00:00' data-updated="true">Updated:
+							Jun 11th, 2018
+</time>
+
+
+						<div class="entry-content">
+							Nginx is well known for its powerful HTTP reverse-proxy features. Altough Nginx does its job well in pretty lot of situations, there are always a need for a general TCP proxy stuff. Sadly this feature does not come boundled in with the stock Nginx.
+This is where 3rd party patches come in. There are quite some great patches out there, in this post I will write about nginx_tcp_proxy_module made by Weibin Yao from China (he has 13 different promising patches and modules for nginx, definitely worth a check).
+							<a href="/~eszabo/blog/ebp006_nginx-as-a-general-purpose-tcp-proxy.html" class="more-link">Read more &rarr;</a>
+						</div>
+					</article>
+					<hr />
+					<article class="post-content">
+						<h2 class="post-title"><a href="/~eszabo/blog/ebp002_nginx-altroot-with-conditional-autoindex.html">Nginx Alternative Root With Conditional Autoindexing</a></h2>							
+							<span class="a-meta">
+								<a class="category-proof-of-concept" href="/~eszabo/categories/proof-of-concept/">Proof of Concept</a>
+							</span>
+							<span class="m-split">
+								<a class="tag-nginx" href="/~eszabo/tags/nginx/">#nginx</a>
+							</span>
+							
+							<time class="m-split" datetime='2018-06-11T21:20:35&#43;00:00' data-updated="true">Updated:
+							Jun 11th, 2018
+</time>
+
+
+						<div class="entry-content">
+							<p>Recently I have developed the following Nginx setup to make my virtual host instance more advanced. It has the following features:</p>
+<ul>
+<li>The blog root directory served from a completely different directory than the regular <code>htdocs</code> root. Blog content has preference over the other files, so if the requested file is not found in the blog root, it falls back to the regular root.</li>
+<li>There is a feature for conditional autoindexing (I don&rsquo;t like to expse my files by default): if I put a <code>.index</code> file into a directory, it will be publicly autoindexed, otherwise Nginx returns a 404 error (as instead on the default 403).</li>
+<li>Handles <code>error_page</code> idoms well.</li>
+</ul>
+							<a href="/~eszabo/blog/ebp002_nginx-altroot-with-conditional-autoindex.html" class="more-link">Read more &rarr;</a>
+						</div>
+					</article>
+					<hr />
+				</div>
+
+
+			</section>
+		</main>
+		<footer id="footer" class="inner">
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-sa-4-0.png" /></a><br />Website contents are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> unless stated otherwise.
+		</footer>
+		
+		
+
+	</body>
+</html>
